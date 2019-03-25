@@ -9,10 +9,7 @@ public class List_inChainOfNodes{
     /**
       Construct an empty list
     */
-    public List_inChainOfNodes() {
-        this.headReference = new Node(null);
-    }
-    
+
 
     /**
       @return the number of elements in this list
