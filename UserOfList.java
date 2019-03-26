@@ -25,5 +25,41 @@ public class UserOfList {
         }
         System.out.println( "populated list: " + list
                           + System.lineSeparator());
+
+	// /* Test get and set accessors
+	//  */
+	// System.out.println(list.get(0));	
+	// System.out.println(list.get(1));	
+	// System.out.println(list.get(2));
+	// System.out.println(list.get(3));
+
+	// System.out.println("Replace "
+	// 		   + list.set(2, "o")
+	// 		   + " with o: "
+	// 		   + list);
+	// System.out.println("Replace "
+	// 		   + list.set(3, "p")
+	// 		   + " with p: "
+	// 		   + list
+	// 		   + System.lineSeparator());
+
+	/* Test add method
+	 */
+	System.out.println(list.add(3, "d")
+			   + " "
+			   + list);
+	System.out.println(list.add(0, "!")
+			   + " "
+			   + list);
+	
+      	/* Test remove method
+	 */
+	System.out.println(list.remove(4)
+			   + " "
+			   + list);
+	System.out.println(list.remove(0)
+			   + " "
+			   + list);
+			   			   
     }
 }
