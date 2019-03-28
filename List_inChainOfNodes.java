@@ -23,10 +23,9 @@ public class List_inChainOfNodes{
     private int size( Node startingAt) {
         Node next = startingAt.getReferenceToNextNode();
         if( next == null) return 1;
-        else return 1+ size( next);
+        else return 1 + size( next);
     }
     
-
      /**
        @return a string representation of this list,
        format:
@@ -44,11 +43,13 @@ public class List_inChainOfNodes{
     
     
     /**
-      Append @value to the head of this list./
+      Append @value to the head of this list.
+
       @return true, in keeping with conventions yet to be discussed
      */
      public boolean addAsHead( Object val) {
-	 headReference = new Node(val, headReference);
+	 Node newNode = new Node(val, headReference);
+	 headReference = newNode;
 	 return true;
      }
 
@@ -59,10 +60,8 @@ public class List_inChainOfNodes{
     */
     public Node getNode( int index) {
 	Node currentNode = headReference;
-	while (index > 0) {
+        for (int i = 0; i < index; i++)
 	    currentNode = currentNode.getReferenceToNextNode();
-	    index--;
-	}
 	return currentNode;
     }
 
@@ -108,7 +107,7 @@ public class List_inChainOfNodes{
     public Object remove( int index) {
 	Object oldCargo = get(index);
 	if (index == 0)
-	    headReference = getNode(index + 1);
+	    headReference = getNode(index).getReferenceToNextNode();
 	else
 	    getNode(index - 1).setReferenceToNextNode(getNode(index + 1));
 	return oldCargo;

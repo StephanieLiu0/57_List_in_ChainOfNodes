@@ -26,13 +26,21 @@ public class UserOfList {
         System.out.println( "populated list: " + list
                           + System.lineSeparator());
 
-	// /* Test get and set accessors
-	//  */
-	// System.out.println(list.get(0));	
-	// System.out.println(list.get(1));	
-	// System.out.println(list.get(2));
-	// System.out.println(list.get(3));
+	/* Test get and set accessors
+	 */
+	System.out.println(list.get(0));	
+	System.out.println(list.get(1));	
+	System.out.println(list.get(2));
+	System.out.println(list.get(3));
 
+	// System.out.println("Replace "
+	// 		   + list.set(0, "F")
+	// 		   + " with F: "
+	// 		   + list);
+	// System.out.println("Replace "
+	// 		   + list.set(1, "l")
+	// 		   + " with l: "
+	// 		   + list);
 	// System.out.println("Replace "
 	// 		   + list.set(2, "o")
 	// 		   + " with o: "
